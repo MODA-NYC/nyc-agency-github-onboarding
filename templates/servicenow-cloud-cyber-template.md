@@ -1,136 +1,73 @@
-# Cloud and cyber approval workstream template
+# Cloud/cyber review boilerplate
 
-Use this template to give cloud/cyber reviewers a summary of the proposed setup.
+This template provides boilerplate text for a cloud/cyber review request. Paste the standard boilerplate below into the required cloud/cyber review ticket or the relevant section of your onboarding request, then supplement it with your agency-specific details.
 
-Use the baseline-controls section to show whether the agency will adopt ODA's standard controls or is requesting an exception. Use the org-configuration workstream for the detailed implementation record.
+If the cloud/cyber review requires a separate ticket, record the ticket number and status in your parent onboarding ticket.
 
-Some fields may also appear in the parent request so this ticket can stand on its own if it is routed separately.
+---
 
-## Request details
+## Part 1: Standard boilerplate
+
+Paste or reference the following baseline information in the review request.
+
+> **Service:** GitHub Enterprise (cloud) — an established SaaS platform. This review is expected to be routine.
+>
+> **Org admin model:** Each organization has at least two designated org admins who manage membership, teams, and settings.
+>
+> **Access control:** Access is managed through team-based permissions. Direct one-off repository permissions are discouraged.
+>
+> **Repository visibility:** Repository visibility is set in compliance with NYC GitHub policy. Agencies document whether repositories are public, private, or mixed.
+>
+> **SSO requirement:** SSO is required for all organizations in the ODA-managed enterprise. `[DECISION NEEDED: set required SSO integration deadline to 60 or 90 days after onboarding]`
+>
+> **Copilot / AI / MCP governance:** Copilot model availability, agent enablement, and MCP usage are governed per the policy described in the [Organization configuration](../docs/02-org-configuration.md) page. All Grok models are disabled enterprise-wide. MCP is treated as a privacy review item and enabled intentionally, not by default.
+
+---
+
+## Part 2: Agency-specific details to complete
+
+Fill in the following fields to describe your agency's specific use case.
 
 **Agency:**
-[fill in]
-
-**Proposed org name:**
 [fill in]
 
 **Business purpose:**
 [fill in]
 
-## Review path
-
-**Routine review expected?**
-- Yes
-- No
-- Needs reviewer confirmation
-
-**If not routine, what is driving deeper review?**
+**Use case — how will the organization use GitHub?**
 [fill in]
 
-## Baseline controls for reviewer context
+**Data sensitivity:**
+- Expected data classification: [fill in]
+- Sensitive, regulated, or restricted data expected in GitHub? [yes/no/details]
+- Secrets or credentials stored in GitHub or managed elsewhere? [fill in]
 
-Indicate whether the agency plans to adopt these standard controls or is seeking an exception:
-- team-based access
-- at least two org admins
-- protected branches or rulesets for active repositories
-- pull request review requirements
-- review of dormant users and stale access
-- support and escalation path
+**Existing org / repo migration:**
+- Migrating an existing GitHub organization into the enterprise? [yes/no]
+- Migrating existing repositories? [yes/no/details]
 
-**Baseline controls adopted?**
-[yes/no/details]
+**External collaborators:**
+- Outside collaborators or contractors expected? [yes/no/details]
+- Approval and offboarding process for collaborators: [fill in]
 
-**Any requested exceptions to standard controls?**
+**AI / agent / MCP usage:**
+- Copilot requested? [yes/no]
+- Coding agent, code review agent, or partner agents requested? [yes/no/details]
+- MCP planned? [yes/no]
+- If MCP is planned, what external systems will it connect to and what context may leave GitHub? [fill in]
+
+**Cloud integrations:**
+- GitHub Actions with cloud resources? [yes/no]
+- Cloud credentials needed? [yes/no]
+- Self-hosted runners? [yes/no]
+- Other external integrations: [fill in]
+
+**Anything unusual for review:**
 [fill in]
 
-## Agency-specific use of GitHub
+---
 
-**Expected repositories:**
-- Public
-- Private
-- Mixed
-
-**Planned GitHub capabilities:**
-- Source control
-- Issues / project management
-- Documentation
-- Packages
-- Actions / CI/CD
-- Release workflows or deployments
-- Other
-
-**Data classification:**
-[fill in]
-
-**Sensitive, regulated, or restricted data expected in GitHub?**
-[yes/no/details]
-
-**Secrets or credentials expected in GitHub?**
-[yes/no/details]
-
-## Identity and access
-
-**SSO expected or required?**
-[yes/no/details]
-
-**SSO may be a prerequisite for approval acknowledged?**
-[yes/no]
-
-**Org admins:**
-[fill in]
-
-**Outside collaborators expected?**
-[yes/no/details]
-
-**Offboarding / access removal method:**
-[fill in]
-
-**[DECISION NEEDED] Does Azure tenant membership affect this request?**
-[fill in]
-
-## Cloud and integration questions
-
-**Existing Azure subscription?**
-[yes/no/unknown]
-
-**Cloud credentials needed for Actions or automation?**
-[yes/no/details]
-
-**Self-hosted runners planned?**
-[yes/no/details]
-
-**Other cloud or external integrations:**
-[fill in]
-
-## AI, Copilot, and MCP
-
-**Copilot requested?**
-[yes/no/details]
-
-**Coding agent requested?**
-[yes/no]
-
-**Code review agent requested?**
-[yes/no]
-
-**Partner agents requested?**
-[yes/no/details]
-
-**MCP planned?**
-[yes/no/details]
-
-**If MCP is planned, should it be enabled only after privacy review?**
-[yes/no]
-
-**If MCP is planned, privacy risks and connected systems documented?**
-[yes/no]
-
-## Compensating controls
-
-**Compensating controls for any exceptions or higher-risk use:**
-[fill in]
-
-## Decision
+## Review outcome
 
 **Reviewer:**
 [fill in]
@@ -144,9 +81,5 @@ Indicate whether the agency plans to adopt these standard controls or is seeking
 **Conditions / notes:**
 [fill in]
 
-## Definition of done
-
-- [ ] Review path recorded
-- [ ] Baseline controls and agency-specific choices documented
-- [ ] Decision recorded
-- [ ] Conditions and follow-up actions assigned
+**Review ticket number (if separate from parent):**
+[fill in]

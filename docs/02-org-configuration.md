@@ -1,6 +1,6 @@
 # Organization configuration
 
-This page covers the decisions that define how the GitHub organization will be set up, governed, and operated.
+This page is the source of truth for how a GitHub organization will be set up, governed, and operated. It covers the decisions agencies need to make and the responsibilities org admins must carry after launch.
 
 ## What this workstream decides
 
@@ -10,19 +10,21 @@ This workstream confirms:
 - how access will be managed
 - which paid features will be enabled
 - how identity, SSO, and outside collaborators will be handled
+- whether an existing GitHub organization or repositories need to be migrated into the enterprise
 - what expectations apply to organization admins after launch
 
 ## Information you should be ready to provide
 
 Before this workstream is complete, your agency should be able to state:
-- the proposed organization name and purpose
+- the purpose of the organization
 - the initial user population
 - the expected repository types and visibility
 - the initial team structure
 - the two proposed organization admins
 - the paid features requested at launch
-- whether SSO is expected or required
+- the SSO integration plan and timeline
 - whether outside collaborators will be allowed
+- whether an existing GitHub organization or existing repositories need to be migrated
 
 ## Decisions you need to make
 
@@ -36,10 +38,11 @@ Document:
 
 ### 2. Organization name and description
 
-Choose:
-- a clear organization name that can remain stable over time
+ODA standardizes organization naming to maintain consistency across the enterprise. You do not need to propose an org name. Instead, provide:
 - a short description that explains the purpose of the org
 - a repository naming pattern if your agency wants one
+
+ODA will assign the organization name based on city naming conventions.
 
 ### 3. Organization admins
 
@@ -73,9 +76,12 @@ Set expectations for:
 
 ### 6. Identity and SSO
 
+SSO is required for all organizations in the ODA-managed enterprise.
+
+`[DECISION NEEDED: set required SSO integration deadline to 60 or 90 days after onboarding]`
+
 Confirm:
-- whether SSO is required for the organization
-- whether SSO is expected for cloud/cyber approval
+- the SSO integration plan and timeline
 - whether outside collaborators are allowed and, if so, under what conditions
 - how user access will be removed when staff change roles or leave
 
@@ -83,7 +89,18 @@ Confirm:
 
 > **[DECISION NEEDED]** Is membership in the hosted Azure tenant required in order to join the ODA-managed GitHub Enterprise environment?
 
-### 7. Paid features to enable at launch
+### 7. Migration of existing organizations or repositories
+
+If the agency has an existing GitHub organization or repositories outside the ODA-managed enterprise, document:
+- the existing organization name and URL
+- the number of repositories to migrate
+- whether the migration involves active repositories with open pull requests, issues, or CI/CD workflows
+- any dependencies or integrations that would be affected by migration
+- the preferred migration timeline
+
+ODA will coordinate the migration process. Agencies should not attempt to move organizations or repositories into the enterprise without ODA involvement.
+
+### 8. Paid features to enable at launch
 
 Only request paid features that the agency expects to use and is prepared to fund.
 
@@ -150,11 +167,13 @@ Your agency should not name an org admin unless that person is prepared to carry
 ## When this workstream is done
 
 This workstream is complete when the agency has documented:
-- the org name and purpose
+- the org purpose
 - two approved org admins
 - the membership and team model
 - the repository defaults and baseline controls
+- the migration plan, if applicable
+- the SSO integration plan and timeline
 - the paid features requested at launch
-- the identity, SSO, outside-collaborator, and Copilot/MCP decisions
+- the Copilot/MCP decisions
 
 Use the [Org configuration template](../templates/servicenow-org-configuration-template.md) to submit this workstream.

@@ -4,7 +4,9 @@ This repository explains how an NYC agency requests and onboards an organization
 
 This MVP focuses on the information an agency needs to submit now so onboarding can start without a separate orientation call.
 
-This onboarding guide complements, and does not replace, the [NYC Citywide GitHub Policy (current public copy)](https://beta.nyc/wp-content/uploads/2016/05/Citywide-GitHub-Policy.pdf).
+This onboarding guide complements, and does not replace, the [NYC Citywide GitHub Policy (current public copy)](https://beta.nyc/wp-content/uploads/2016/05/Citywide-GitHub-Policy.pdf). NYC intends to update the older DoITT GitHub policy to reflect the current enterprise environment.
+
+Onboarding requests are tracked through the Citywide Service Desk / ServiceNow process. `[DECISION NEEDED: add ServiceNow link]`
 
 ## Start here
 
@@ -43,15 +45,17 @@ If your agency needs to use separate tickets, link them together and name one ag
 Before you submit, collect:
 
 - agency name, business owner, technical owner, and primary requestor
-- proposed GitHub organization name and short purpose statement
+- short purpose statement for the organization
 - two proposed organization admins
-- number of users at launch, in 12 months, and in 36 months
+- estimated number of users and paid features for the chosen funding path
+- whether any users already have Visual Studio licenses tied to the same email address as their GitHub Enterprise accounts (these users do not need an additional GitHub Enterprise license)
 - paid features requested, including whether Copilot is needed
-- whether the agency already has an Azure subscription
-- whether the agency may need to create a new Azure subscription
+- whether the agency already has an Azure subscription (ODA / Cloud Services can help identify an existing subscription and the Azure point of contact on file)
+- whether the agency needs to migrate an existing GitHub organization or existing repositories into the enterprise
 - whether outside collaborators or contractors will need access
-- whether SSO is expected or required for the use case
 - data sensitivity and any cloud/cyber concerns
+
+> SSO is required for all organizations. `[DECISION NEEDED: set required SSO integration deadline to 60 or 90 days after onboarding]`
 
 ## About items marked `[DECISION NEEDED]`
 

@@ -1,80 +1,53 @@
 # Cloud and cyber approval
 
-This page explains what the agency should provide for the cloud/cyber workstream.
+This page explains the cloud/cyber review process for agencies onboarding to the ODA-managed GitHub Enterprise environment.
 
 ## Goal
 
 The agency needs a clear cloud/cyber decision before launch.
 
-For this service, the expected path should usually be a **routine review** because GitHub Enterprise is an established SaaS platform. Requests that add nonstandard infrastructure, exceptions, or higher-risk use cases may need deeper review.
+## What to expect
 
-## What the agency should provide
+GitHub Enterprise is an established SaaS platform. The cloud/cyber review for this service is expected to be a **routine review** in most cases.
 
-### 1. Service summary
+Agencies may need to paste standard boilerplate into the relevant cloud/cyber review request and then add agency-specific details about their use case. The boilerplate is available in the [cloud/cyber review boilerplate template](../templates/servicenow-cloud-cyber-template.md).
 
-Provide:
-- agency and program name
-- business purpose
-- short description of how GitHub will be used
+Requests that add nonstandard infrastructure, exceptions, or higher-risk use cases may need deeper review.
 
-### 2. Scope of GitHub use
+## Standard baseline vs. agency-specific details
 
-State whether the organization will use GitHub for:
-- source control only
-- issues or project tracking
-- documentation
-- packages
-- GitHub Actions or CI/CD
-- release workflows or deployments
-- other integrations
+### Standard baseline (provided or expected by ODA)
 
-### 3. Data and content
+The following controls and governance points apply to all organizations in the ODA-managed enterprise. This baseline information should be included in the review request:
 
-Document:
-- the expected data classification
-- whether sensitive, regulated, or restricted data is expected in GitHub
-- whether secrets or credentials will be stored in GitHub or managed elsewhere
-- whether logs, issues, pull requests, and workflow output could contain sensitive content
+- **Org admin model:** at least two designated org admins per organization
+- **Access control:** team-based access management
+- **Repository visibility:** compliant with NYC GitHub policy; agencies document whether repos are public, private, or mixed
+- **SSO requirement:** SSO is required for all organizations `[DECISION NEEDED: set required SSO integration deadline to 60 or 90 days after onboarding]`
+- **Copilot / AI / MCP governance:** managed per the policy described in [Organization configuration](02-org-configuration.md), including model restrictions and privacy review requirements for MCP
 
-### 4. Identity and access
+### Agency-specific details (the agency must provide)
 
-Document:
-- whether SSO is expected or required
-- who the org admins will be
-- whether outside collaborators will be allowed
-- how user access will be removed when staff leave or no longer need access
+Each agency should add the following information to the review request:
 
-> **Dependency:** SSO integration may be a prerequisite for cloud/cyber approval. Raise it early.
+- **Use case:** what the organization will be used for
+- **Data sensitivity:** expected data classification and whether sensitive, regulated, or restricted data will be stored in GitHub
+- **Existing org / repo migration:** whether an existing GitHub organization or repositories are being migrated into the enterprise
+- **External collaborators:** whether outside collaborators or contractors will need access
+- **AI / agent / MCP usage:** whether the agency plans to use Copilot, coding agents, code review agents, partner agents, or MCP, and any specific privacy considerations
+- **Anything unusual:** self-hosted runners, cloud credentials, production deployments, or anything else the reviewer should know
+
+## Tracking
+
+The parent onboarding ticket is the tracker of record. If the cloud/cyber review requires a separate review ticket, the separate ticket number and status should be recorded in the parent onboarding ticket.
+
+## SSO dependency
+
+SSO may be a dependency for cloud/cyber approval or completion. Agencies should identify their SSO plan and timeline early in the process.
+
+`[DECISION NEEDED: set required SSO integration deadline to 60 or 90 days after onboarding]`
 
 > **[DECISION NEEDED]** Is membership in the hosted Azure tenant required in order to join the ODA-managed GitHub Enterprise environment?
-
-### 5. Baseline controls
-
-Document the controls the agency expects to use, such as:
-- team-based access
-- protected branches or rulesets
-- pull request review requirements
-- secret scanning or code scanning if applicable
-- review of dormant users and stale access
-- support and escalation path
-
-### 6. Cloud integrations
-
-Call out whether the organization plans to use:
-- GitHub Actions with cloud resources
-- cloud credentials
-- self-hosted runners
-- Azure subscription billing
-- other external integrations
-
-### 7. AI, Copilot, and MCP
-
-If the agency plans to use AI-related features, say so in the review:
-- whether Copilot is requested
-- whether coding agent, code review agent, or partner agents will be enabled
-- whether MCP is planned
-- whether MCP should be enabled only after privacy review
-- what privacy risks MCP may create based on the systems it connects to
 
 ## What will usually trigger deeper review
 
@@ -87,20 +60,13 @@ Expect deeper review if the request includes any of the following:
 - unresolved SSO or identity dependencies
 - MCP or other integrations that raise privacy concerns
 
-## How the template is structured
-
-The cloud/cyber template is meant to summarize the proposed control posture for reviewer context.
-
-Use the **baseline controls** section to record whether the agency plans to adopt ODA's standard controls or is asking for an exception. Use the **agency-specific use** and **integration** sections to document what is unique about the agency's use case.
-
-The detailed implementation record still lives in the org-configuration workstream.
-
 ## When this workstream is done
 
 This workstream is complete when the agency has:
-- submitted the review information
+- submitted the review information (standard boilerplate plus agency-specific details)
 - recorded whether the request follows the routine path or needs escalation
 - documented any conditions or required follow-up actions
 - received a cloud/cyber decision
+- recorded the review ticket number in the parent onboarding ticket, if applicable
 
-Use the [Cloud/cyber approval template](../templates/servicenow-cloud-cyber-template.md) to submit this workstream.
+Use the [cloud/cyber review boilerplate template](../templates/servicenow-cloud-cyber-template.md) to prepare the review submission.

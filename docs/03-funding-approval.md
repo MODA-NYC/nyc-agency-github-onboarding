@@ -6,26 +6,40 @@ This page explains how to estimate cost, choose a payment path, and route the fu
 
 Before launch, the agency needs a funding decision that covers the GitHub organization and any paid features it plans to use.
 
-## Questions to answer first
+## Funding workflow at a glance
 
-Before you build the funding request, confirm:
-- number of users at launch, in 12 months, and in 36 months
-- which paid features are needed
+1. Confirm whether the agency already has an Azure subscription.
+2. If needed, work with ODA / Cloud Services to identify an existing subscription and the Azure point of contact on file.
+3. Estimate GitHub seats and paid features.
+4. Account for users who already have Visual Studio licenses tied to the same email address as their GitHub Enterprise accounts — these users do not need an additional GitHub Enterprise license.
+5. Choose Pay-As-You-Go or Monetary Commit.
+6. If Pay-As-You-Go: no formal quote is required. Use the Azure pricing calculator estimate for OMB approval of the spending increase.
+7. If Monetary Commit: obtain a formal quote through Microsoft based on 3 years of estimated usage and submit it for approval.
+8. After approval, ODA handles the Azure subscription connection steps.
+
+## Step 1: Confirm Azure subscription status
+
+Before building the estimate, confirm:
 - whether the agency already has an Azure subscription
-- if no Azure subscription exists, whether a new one must be created
-- whether this is an older onboarding that may need a subscription created retroactively
-- who owns the funding decision
-- whether any requested Copilot users already have seats in another GitHub organization
+- the subscription name or ID, if known
 
-## Step 1: Build the estimate
+> ODA / Cloud Services can help identify whether the agency already has an Azure subscription and, if so, provide the Azure point of contact on file. Raise this in your intake request if you are unsure.
 
-Use the Azure pricing calculator to estimate expected consumption.
+If the agency is moving an existing GitHub organization or an earlier onboarding into the ODA-managed enterprise, ODA may need to create or connect an Azure subscription after the fact. Note this in your request.
+
+## Step 2: Build the estimate
+
+Estimate the number of users and paid features the agency expects to use.
 
 Include the items your agency expects to pay for, such as:
 - user counts
 - Copilot seats
 - Advanced Security
 - Actions, Codespaces, or other paid usage if applicable
+
+> **Visual Studio license note:** Users who already have Visual Studio licenses tied to the same email address as their GitHub Enterprise accounts do not need an additional GitHub Enterprise license. Account for this when estimating seat counts.
+
+Use the Azure pricing calculator to build the estimate.
 
 When using the calculator:
 - you will **not** see enterprise pricing
@@ -34,7 +48,7 @@ When using the calculator:
 
 Save the estimate output and the assumptions you used.
 
-## Step 2: Choose a payment option
+## Step 3: Choose a payment option
 
 ### Option A: Pay-As-You-Go (PayGo / Opex)
 
@@ -55,24 +69,24 @@ What to attach:
 Use this option when the agency wants to fund expected usage up front.
 
 What this means:
-- a **formal quote is required**
-- the total amount should be based on **3 years of monthly estimated usage**
+- a **formal quote is required**, obtained through Microsoft
+- the total amount should be based on **3 years of estimated monthly usage**, including multi-year growth estimates
 - the quote will show a **period of performance ending September 30, 2030**
 - monetary commits are **use-it-or-lose-it**
 
 > **Important:** Choose the Monetary Commit path only if the agency understands that unused committed funds are not preserved for later use.
 
 What to attach:
-- the formal quote
-- the assumptions behind the 36-month estimate
+- the formal quote from Microsoft
+- the assumptions behind the 3-year estimate
 - the selected payment option in the funding request
 
-## Step 3: Route the request
+## Step 4: Route the request
 
-### For PayGo
+### For Pay-As-You-Go
 
 The funding request should clearly state:
-- that PayGo is the selected payment option
+- that Pay-As-You-Go is the selected payment option
 - the estimated monthly consumption
 - that no formal quote is required for this path
 - the OMB approval status for the spending increase
@@ -87,30 +101,21 @@ The request should clearly state:
 - that the estimate is based on 3 years of monthly usage
 - that the agency understands the use-it-or-lose-it nature of the commit
 
-## Step 4: Confirm Azure subscription status
-
-The request must say whether an Azure subscription already exists.
-
-If no Azure subscription exists:
-- note whether the agency needs to create a new subscription
-- note whether this is part of the backlog of agencies that may need to create subscriptions retroactively
-
-Do not wait until the end of onboarding to surface this. Subscription status affects the path to launch.
-
 ## What happens after funding approval
 
 After the funding workstream is approved:
-1. Strategic Sourcing creates a ticket for ODA.
-2. If the GitHub org needs to be connected to an Azure subscription, ODA may route the work to the Azure admin.
-3. Temporary Azure admin permissions may be granted so the subscription connection can be completed.
+1. The approval is routed to ODA.
+2. If the GitHub org needs to be connected to an Azure subscription, ODA coordinates the connection steps internally.
+3. ODA will contact the agency if anything additional is needed to complete the subscription connection.
 
 ## When this workstream is done
 
 This workstream is complete when the agency has:
-- documented the user and paid-feature assumptions
+- confirmed Azure subscription status
+- documented the user and paid-feature assumptions, including the Visual Studio license check
 - selected a payment option
 - attached the required estimate or quote for that option
 - recorded the funding approval
-- documented Azure subscription status and any follow-up needed
+- documented any Azure subscription follow-up needed
 
 Use the [Funding approval template](../templates/servicenow-funding-template.md) to submit this workstream.

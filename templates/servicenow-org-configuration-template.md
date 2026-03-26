@@ -9,11 +9,10 @@ Some fields may also appear in the parent request so this ticket can stand on it
 **Agency:**
 [fill in]
 
-**Proposed org name:**
-[fill in]
-
 **Purpose statement:**
 [fill in]
+
+> ODA standardizes organization naming. You do not need to propose an org name.
 
 ## Admins and ownership
 
@@ -31,10 +30,26 @@ Some fields may also appear in the parent request so this ticket can stand on it
 
 ## Org admin responsibility acknowledgment
 
-See [Organization configuration](../docs/02-org-configuration.md) for the full list of org-admin responsibilities.
+The full list of org-admin responsibilities is described in [Organization configuration](../docs/02-org-configuration.md).
 
-**The proposed org admins acknowledge those responsibilities:**
+**The proposed org admins have reviewed and accept those ongoing responsibilities:**
 [yes/no]
+
+## Existing org / repository migration
+
+**Does the agency need to migrate an existing GitHub organization into the enterprise?**
+- Yes
+- No
+
+**If yes, existing org name / URL:**
+[fill in]
+
+**Does the agency need to migrate existing repositories into the enterprise?**
+- Yes
+- No
+
+**If yes, approximate number of repositories and any migration concerns:**
+[fill in]
 
 ## Access and team model
 
@@ -71,8 +86,12 @@ See [Organization configuration](../docs/02-org-configuration.md) for the full l
 
 ## Identity and SSO
 
-**SSO expected or required?**
-[yes/no/details]
+SSO is required for all organizations.
+
+**SSO integration plan and timeline:**
+[fill in]
+
+`[DECISION NEEDED: set required SSO integration deadline to 60 or 90 days after onboarding]`
 
 **Other identity dependencies:**
 [fill in]
@@ -81,6 +100,8 @@ See [Organization configuration](../docs/02-org-configuration.md) for the full l
 [fill in]
 
 ## Copilot, AI, and MCP choices
+
+Copilot, AI, and MCP policy is described in [Organization configuration](../docs/02-org-configuration.md). Document your agency's choices below.
 
 ### Copilot models
 
@@ -135,10 +156,11 @@ See [Organization configuration](../docs/02-org-configuration.md) for the full l
 
 ## Definition of done
 
-- [ ] Org name and purpose approved
+- [ ] Org purpose documented
 - [ ] Two org admins approved
+- [ ] Org admin responsibilities acknowledged (see [Organization configuration](../docs/02-org-configuration.md))
+- [ ] Existing org / repo migration plan documented, if applicable
 - [ ] Access and team model documented
 - [ ] Repository defaults documented
-- [ ] Identity and SSO choices documented
+- [ ] SSO plan and timeline documented
 - [ ] Copilot / AI / MCP choices documented
-- [ ] Org admin responsibilities acknowledged

@@ -6,7 +6,7 @@ Use this page before you open your onboarding request.
 
 This process is for NYC agencies that need an organization account in the ODA-managed GitHub Enterprise environment.
 
-This onboarding guide complements, and does not replace, the [NYC Citywide GitHub Policy (current public copy)](https://beta.nyc/wp-content/uploads/2016/05/Citywide-GitHub-Policy.pdf). Agencies should still follow that policy's rules on allowable content, official account use, and administrator responsibilities.
+This onboarding guide complements, and does not replace, the [NYC Citywide GitHub Policy (current public copy)](https://beta.nyc/wp-content/uploads/2016/05/Citywide-GitHub-Policy.pdf). Agencies in this enterprise remain subject to NYC's existing GitHub policy framework. NYC intends to update the older DoITT GitHub policy to reflect the current enterprise environment.
 
 The onboarding process has three workstreams:
 
@@ -16,7 +16,13 @@ The onboarding process has three workstreams:
 
 These workstreams can usually run in parallel.
 
-## Recommended ticket structure
+## Creating an onboarding ticket
+
+NYC uses the Citywide Service Desk / ServiceNow to track onboarding requests and their progress across workstreams. Each onboarding request should be opened as a ServiceNow ticket so that funding, cloud/cyber review, and org configuration are tracked in one place.
+
+`[DECISION NEEDED: add ServiceNow link]`
+
+`[DECISION NEEDED: confirm whether all agencies have access to Citywide Service Desk / ServiceNow and define the fallback path if not]`
 
 Preferred model:
 - open **one parent ServiceNow request**
@@ -45,38 +51,43 @@ Be ready to provide:
 ### Scope of use
 
 Be ready to describe:
-- the proposed GitHub organization name
 - what the organization will be used for
 - whether repositories will be public, private, or mixed
 - whether contractors or other outside collaborators will need access
-- whether the request is for a new organization or an update to an existing one
+- whether the agency needs to migrate an existing GitHub organization or existing repositories into the enterprise
+- whether this is a new onboarding or an update to an existing organization
+
+> ODA standardizes organization naming. You do not need to propose an org name.
 
 ### Users and paid features
 
 Estimate:
-- users at launch
-- users in 12 months
-- users in 36 months
+- the number of users for the funding path you plan to choose (see [Funding approval](03-funding-approval.md))
 - paid features needed at launch
 - paid features that may be added later
+- if pursuing a Monetary Commit, include multi-year growth estimates to support the 3-year commitment
+
+> **Visual Studio license note:** Users who already have Visual Studio licenses tied to the same email address as their GitHub Enterprise accounts do not need an additional GitHub Enterprise license. Account for this when estimating seat counts.
 
 ### Azure and funding
 
 Answer these questions early:
 - Does the agency already have an Azure subscription?
-- If not, does the agency need to create one for this onboarding?
-- Is this an older onboarding that may need a subscription created retroactively?
 - Which payment path fits the request: Pay-As-You-Go or Monetary Commit?
+
+> ODA / Cloud Services can help identify whether the agency already has an Azure subscription and, if so, provide the Azure point of contact on file. Raise this in your intake request if you are unsure.
 
 > **Important:** Agencies using the Azure pricing calculator will not see enterprise pricing. That is acceptable. It is better to submit a higher estimate than to underestimate the request.
 
 ### Identity, cloud, and cyber
 
 Be ready to identify:
-- whether SSO is expected or required
+- SSO plan and timeline — SSO is required for all organizations
 - whether GitHub Actions, cloud credentials, or self-hosted runners are planned
 - whether sensitive or regulated data is expected in GitHub
 - whether the request looks like a routine SaaS review or may need deeper cloud/cyber review
+
+`[DECISION NEEDED: set required SSO integration deadline to 60 or 90 days after onboarding]`
 
 > **[DECISION NEEDED]** Is membership in the hosted Azure tenant required in order to join the ODA-managed GitHub Enterprise environment? Raise this question in intake if it affects your request.
 
@@ -93,13 +104,11 @@ Use the templates in the `templates/` folder to structure the request.
 
 ## What happens after you submit
 
-1. ODA checks the request for completeness.
-2. The three workstreams begin.
-3. Funding approval, cloud/cyber review, and org-configuration decisions move forward in parallel where possible.
-4. After funding approval, the funding team creates a ticket for ODA.
-5. If an Azure subscription needs to be connected to GitHub, ODA handles the internal connection steps and will contact the agency if anything additional is needed.
-6. Once approvals are complete, ODA configures the organization and adds the approved organization admins.
-7. The agency validates access and begins ongoing administration.
+1. **ODA reviews the request and confirms the workstreams.** ODA checks the request for completeness and identifies what each workstream needs to proceed.
+2. **Funding approval proceeds based on the agency's chosen payment option.** For Pay-As-You-Go, the agency submits a pricing calculator estimate for OMB approval. For Monetary Commit, a formal quote is obtained through Microsoft and submitted for approval.
+3. **Cloud/cyber review proceeds using the standard GitHub Enterprise baseline plus any agency-specific use case details.** Most requests follow a routine review path. Requests with nonstandard infrastructure or higher-risk use cases may need deeper review.
+4. **ODA finalizes org setup and any Azure subscription connection work.** If an Azure subscription needs to be connected to GitHub, ODA coordinates this internally.
+5. **The agency designates org admins and completes required post-onboarding tasks such as SSO.** The agency validates access and begins ongoing administration per the responsibilities described in [Organization configuration](02-org-configuration.md).
 
 ## What a complete onboarding should produce
 
