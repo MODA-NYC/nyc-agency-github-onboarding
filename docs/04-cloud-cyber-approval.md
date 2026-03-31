@@ -1,4 +1,5 @@
 # Cloud and cyber approval
+> **WARNING:** This repository is a DRAFT of forthcoming guidance on how to get onboarded onto the doitt-nyc citywide GitHub Enterprise instance. Please consult with ODA before taking the steps outlined below.
 
 This page explains the cloud/cyber review process for agencies onboarding to the ODA-managed GitHub Enterprise environment.
 
