@@ -1,4 +1,5 @@
 # Organization configuration
+> **WARNING:** This repository is a DRAFT of forthcoming guidance on how to get onboarded onto the doitt-nyc citywide GitHub Enterprise instance. Please consult with ODA before taking the steps outlined below.
 
 This page is the source of truth for how a GitHub organization will be set up, governed, and operated. It covers the decisions agencies need to make and the responsibilities org admins must carry after launch.
 
