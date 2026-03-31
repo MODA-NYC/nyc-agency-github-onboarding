@@ -1,4 +1,6 @@
-# NYC agency GitHub onboarding
+# DRAFT! - NYC agency GitHub onboarding
+
+> **WARNING:** This repository is a DRAFT of forthcoming guidance on how to get onboarded onto the doitt-nyc citywide GitHub Enterprise instance. Please consult with ODA before taking the steps outlined below.
 
 This repository explains how an NYC agency requests and onboards an organization in the ODA-managed GitHub Enterprise environment.
 
