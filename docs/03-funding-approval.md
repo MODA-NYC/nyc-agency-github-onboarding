@@ -1,4 +1,5 @@
 # Funding approval
+> **WARNING:** This repository is a DRAFT of forthcoming guidance on how to get onboarded onto the doitt-nyc citywide GitHub Enterprise instance. Please consult with ODA before taking the steps outlined below.
 
 This page explains how to estimate cost, choose a payment path, and route the funding workstream.
 
