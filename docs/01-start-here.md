@@ -1,4 +1,5 @@
 # Start here
+> **WARNING:** This repository is a DRAFT of forthcoming guidance on how to get onboarded onto the doitt-nyc citywide GitHub Enterprise instance. Please consult with ODA before taking the steps outlined below.
 
 Use this page before you open your onboarding request.
 
