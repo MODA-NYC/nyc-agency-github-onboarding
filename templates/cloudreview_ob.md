@@ -17,7 +17,7 @@
 | **Accessible via mobile device:** | `No` |
 | **Product supports SAML 2.0 and/or Azure AD:** | `Yes` |
 | **Data profile:**| `Restricted` |
-| **Data description:** | `INSERT` |
+| **Data description:** | *Insert based on agency use case* |
 | **Data encrypted in transit:** | `Yes` |
 | **Data encrypted at rest:** | `Yes` |
 | **Backup encrypted:** | `Unknown` |
