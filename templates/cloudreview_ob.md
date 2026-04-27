@@ -10,7 +10,7 @@
 | **Product URL:** | `https://github.com/enterprise` |
 | **Product vendor:** | `Microsoft / GitHub` |
 | **Cloud product profile:** | `[x] SaaS`<br> `[ ] PaaS`<br>`[ ] IaaS` |
-| **Cloud product functions:** | `[x] SaaS`<br> `[ ] PaaS`<br>`[ ] IaaS` |
+| **Cloud product functions:** | `[ ] Case management`<br> `[x] Cloud computing`<br>`[x] Content management`<br>`[x] CRM` <br>`[x] Databases` <br>`[x] Document storage and sharing`<br>`[x] Integration` <br>`[ ] IoT` <br>`[ ] Learning management` <br>`[ ] Marketing and communications`<br>`[ ] Other`<br>`[ ] Project management` <br>`[ ] Reporting and BI` <br>`[ ] Security` <br>`[ ] Surveys and forms` |
 | **Expected number of internal users:** | *Insert based on agency use case* |
 | **Expected number of public users:** | `0` |
 | **Is the solution using AI?** | *Insert based on agency use case* |
